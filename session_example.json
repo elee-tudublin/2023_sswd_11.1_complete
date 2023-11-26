@@ -1,0 +1,41 @@
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsImtpZCI6ImFyQTFQWWg3Q29yMXROTDQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzAxMDM0NDUzLCJpYXQiOjE3MDEwMzA4NTMsImlzcyI6Imh0dHBzOi8vYXNhbWZzZ2pxcmxla3VwbGtwd2Quc3VwYWJhc2UuY28vYXV0aC92MSIsInN1YiI6ImIzNWJjZGY5LTRiM2QtNDE2My05Yzc2LTZmMTI1YmM4OTFkZCIsImVtYWlsIjoiZW5kYUBvdXRsb29rLmllIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6e30sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3MDEwMzA4NTN9XSwic2Vzc2lvbl9pZCI6IjgyYjNjMzU4LTc3N2ItNGJiZC1hMmJlLTRiYTdkOTQ2MzJjYSJ9.TQ_vbLbcklQTQ4OO0XN41P9wGSgrW7Xx1og1VqBOpe4",
+    "token_type": "bearer",
+    "expires_in": 3600,
+    "expires_at": 1701034453,
+    "refresh_token": "JpRkGaGlT9uvQZ2RLt61yg",
+    "user": {
+        "id": "b35bcdf9-4b3d-4163-9c76-6f125bc891dd",
+        "aud": "authenticated",
+        "role": "authenticated",
+        "email": "user@locations.com",
+        "email_confirmed_at": "2023-11-10T23:51:07.402302Z",
+        "phone": "",
+        "confirmation_sent_at": "2023-11-10T23:50:28.044437Z",
+        "confirmed_at": "2023-11-10T23:51:07.402302Z",
+        "last_sign_in_at": "2023-11-26T20:34:13.552941204Z",
+        "app_metadata": {
+            "provider": "email",
+            "providers": [
+                "email"
+            ]
+        },
+        "user_metadata": {},
+        "identities": [
+            {
+                "id": "b35bcdf9-4b3d-4163-9c76-6f125bc891dd",
+                "user_id": "b35bcdf9-4b3d-4163-9c76-6f125bc891dd",
+                "identity_data": {
+                    "email": "user@locations.com",
+                    "sub": "b35bcdf9-4b3d-4163-9c76-6f125bc891dd"
+                },
+                "provider": "email",
+                "last_sign_in_at": "2023-11-10T18:44:18.407085Z",
+                "created_at": "2023-11-10T18:44:18.407123Z",
+                "updated_at": "2023-11-10T18:44:18.407123Z"
+            }
+        ],
+        "created_at": "2023-11-10T18:44:18.398709Z",
+        "updated_at": "2023-11-26T20:34:13.554622Z"
+    }
+}
