@@ -38,10 +38,10 @@
 		$filtered = $filtered.sort((a, b) => {
 			// sort asc
 			if (table_sort[col] === true) {
-				return a[col].toLowerCase() < b[col].toLowerCase();
+				return a[col].toLowerCase() < b[col].toLowerCase() ? -1 : 1;
 				// sort desc
 			} else {
-				return a[col].toLowerCase() > b[col].toLowerCase();
+				return a[col].toLowerCase() > b[col].toLowerCase() ? -1 : 1;
 			}
 		});
 	};
@@ -141,12 +141,12 @@
 					<table class="table table-striped table-bordered table-hover">
 						<thead>
 							<tr>
-								<th on:click={() => sortNumeric('id')}><i class="bi bi-sort-down"></i>id</th>
-								<th on:click={() => sortAlpha('name')}><i class="bi bi-sort-up"></i>Name</th>
-								<th on:click={() => sortAlpha('description')}><i class="bi bi-sort-down"></i>Description</th>
+								<th on:click={() => sortNumeric('id')}><i class={ table_sort['id'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>id</th>
+								<th on:click={() => sortAlpha('name')}><i class={ table_sort['name'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Name</th>
+								<th on:click={() => sortAlpha('description')}><i class={ table_sort['description'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Description</th>
 								<th>Location (lat, long)</th>
-								<th on:click={() => sortNumeric('shared')}><i class="bi bi-sort-up"></i>Shared</th>
-								<th on:click={() => sortNumeric('favourite')}><i class="bi bi-sort-down"></i>Favourite</th>
+								<th on:click={() => sortNumeric('shared')}><i class={ table_sort['shared'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Shared</th>
+								<th on:click={() => sortNumeric('favourite')}><i class={ table_sort['favourite'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Favourite</th>
 							</tr>
 						</thead>
 						<tbody>

@@ -74,7 +74,7 @@ export const actions = {
             return fail(400, { form });
         }
 
-        if (form.id != null && parseInt(form.id) > 0) {
+        if (form.data.id != null && parseInt(form.data.id) > 0) {
             http_method = 'PUT';
         }
 
