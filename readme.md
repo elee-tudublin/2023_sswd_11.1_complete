@@ -97,13 +97,12 @@ Add this function to the page.
 		$filtered = $filtered.sort((a, b) => {
 			// sort asc
 			if (table_sort[col] === true) {
-				return a[col].toLowerCase() < b[col].toLowerCase();
+				return a[col].toLowerCase() < b[col].toLowerCase() ? -1 : 1;
 				// sort desc
 			} else {
-				return a[col].toLowerCase() > b[col].toLowerCase();
+				return a[col].toLowerCase() > b[col].toLowerCase() ? -1 : 1;
 			}
 		});
-	};
 
 ```
 

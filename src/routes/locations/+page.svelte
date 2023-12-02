@@ -120,13 +120,13 @@
 			<div class="col-sm-2">
 				<!-- Page Body Left Column (menu) -->
 				<div id="categories" class="list-group">
-					<button on:click={() => filterByCat(0)} class="list-group-item list-group-item-action">
+					<button on:click={() => filterByCat(0)} class="list-group-item list-group-item-action click-text">
 						All Locations
 					</button>
 					{#each categories as cat}
 						<button
 							on:click={() => filterByCat(Number(cat.id))}
-							class="list-group-item list-group-item-action"
+							class="list-group-item list-group-item-action click-text"
 						>
 							{cat.name}
 						</button>
@@ -141,12 +141,12 @@
 					<table class="table table-striped table-bordered table-hover">
 						<thead>
 							<tr>
-								<th on:click={() => sortNumeric('id')}><i class={ table_sort['id'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>id</th>
-								<th on:click={() => sortAlpha('name')}><i class={ table_sort['name'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Name</th>
-								<th on:click={() => sortAlpha('description')}><i class={ table_sort['description'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Description</th>
-								<th>Location (lat, long)</th>
-								<th on:click={() => sortNumeric('shared')}><i class={ table_sort['shared'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Shared</th>
-								<th on:click={() => sortNumeric('favourite')}><i class={ table_sort['favourite'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Favourite</th>
+								<th class="click-text" on:click={() => sortNumeric('id')}><i class={ table_sort['id'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>id</th>
+								<th class="click-text" on:click={() => sortAlpha('name')}><i class={ table_sort['name'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Name</th>
+								<th class="click-text" on:click={() => sortAlpha('description')}><i class={ table_sort['description'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Description</th>
+								<th class="click-text">Location (lat, long)</th>
+								<th class="click-text" on:click={() => sortNumeric('shared')}><i class={ table_sort['shared'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Shared</th>
+								<th class="click-text" on:click={() => sortNumeric('favourite')}><i class={ table_sort['favourite'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>Favourite</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -196,3 +196,11 @@
 	<p><a href="/add_up_location">Add new location</a></p>
 </div>
 <!-- End Main Content-->
+
+
+<style>
+	.click-text:hover {
+		color: blue;
+		cursor: pointer;
+	}
+</style>
